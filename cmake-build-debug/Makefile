@@ -51,24 +51,13 @@ RM = /home/patrick/Downloads/clion-2016.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge
+CMAKE_SOURCE_DIR = /home/patrick/ClionProjects/AutoHedge
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/cmake-build-debug
+CMAKE_BINARY_DIR = /home/patrick/ClionProjects/AutoHedge/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/patrick/Downloads/clion-2016.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -81,11 +70,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/patrick/Downloads/clion-2016.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/cmake-build-debug/CMakeFiles /home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles /home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -114,19 +114,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named CTPClientDemo
-
-# Build rule for target.
-CTPClientDemo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 CTPClientDemo
-.PHONY : CTPClientDemo
-
-# fast build rule for target.
-CTPClientDemo/fast:
-	$(MAKE) -f CMakeFiles/CTPClientDemo.dir/build.make CMakeFiles/CTPClientDemo.dir/build
-.PHONY : CTPClientDemo/fast
-
-#=============================================================================
 # Target rules for targets named AutoHedge
 
 # Build rule for target.
@@ -138,6 +125,114 @@ AutoHedge: cmake_check_build_system
 AutoHedge/fast:
 	$(MAKE) -f CMakeFiles/AutoHedge.dir/build.make CMakeFiles/AutoHedge.dir/build
 .PHONY : AutoHedge/fast
+
+DBDriver.o: DBDriver.cpp.o
+
+.PHONY : DBDriver.o
+
+# target to build an object file
+DBDriver.cpp.o:
+	$(MAKE) -f CMakeFiles/AutoHedge.dir/build.make CMakeFiles/AutoHedge.dir/DBDriver.cpp.o
+.PHONY : DBDriver.cpp.o
+
+DBDriver.i: DBDriver.cpp.i
+
+.PHONY : DBDriver.i
+
+# target to preprocess a source file
+DBDriver.cpp.i:
+	$(MAKE) -f CMakeFiles/AutoHedge.dir/build.make CMakeFiles/AutoHedge.dir/DBDriver.cpp.i
+.PHONY : DBDriver.cpp.i
+
+DBDriver.s: DBDriver.cpp.s
+
+.PHONY : DBDriver.s
+
+# target to generate assembly for a file
+DBDriver.cpp.s:
+	$(MAKE) -f CMakeFiles/AutoHedge.dir/build.make CMakeFiles/AutoHedge.dir/DBDriver.cpp.s
+.PHONY : DBDriver.cpp.s
+
+HedgeDriver.o: HedgeDriver.cpp.o
+
+.PHONY : HedgeDriver.o
+
+# target to build an object file
+HedgeDriver.cpp.o:
+	$(MAKE) -f CMakeFiles/AutoHedge.dir/build.make CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.o
+.PHONY : HedgeDriver.cpp.o
+
+HedgeDriver.i: HedgeDriver.cpp.i
+
+.PHONY : HedgeDriver.i
+
+# target to preprocess a source file
+HedgeDriver.cpp.i:
+	$(MAKE) -f CMakeFiles/AutoHedge.dir/build.make CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.i
+.PHONY : HedgeDriver.cpp.i
+
+HedgeDriver.s: HedgeDriver.cpp.s
+
+.PHONY : HedgeDriver.s
+
+# target to generate assembly for a file
+HedgeDriver.cpp.s:
+	$(MAKE) -f CMakeFiles/AutoHedge.dir/build.make CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.s
+.PHONY : HedgeDriver.cpp.s
+
+MarketDataHandle.o: MarketDataHandle.cpp.o
+
+.PHONY : MarketDataHandle.o
+
+# target to build an object file
+MarketDataHandle.cpp.o:
+	$(MAKE) -f CMakeFiles/AutoHedge.dir/build.make CMakeFiles/AutoHedge.dir/MarketDataHandle.cpp.o
+.PHONY : MarketDataHandle.cpp.o
+
+MarketDataHandle.i: MarketDataHandle.cpp.i
+
+.PHONY : MarketDataHandle.i
+
+# target to preprocess a source file
+MarketDataHandle.cpp.i:
+	$(MAKE) -f CMakeFiles/AutoHedge.dir/build.make CMakeFiles/AutoHedge.dir/MarketDataHandle.cpp.i
+.PHONY : MarketDataHandle.cpp.i
+
+MarketDataHandle.s: MarketDataHandle.cpp.s
+
+.PHONY : MarketDataHandle.s
+
+# target to generate assembly for a file
+MarketDataHandle.cpp.s:
+	$(MAKE) -f CMakeFiles/AutoHedge.dir/build.make CMakeFiles/AutoHedge.dir/MarketDataHandle.cpp.s
+.PHONY : MarketDataHandle.cpp.s
+
+TradingHandle.o: TradingHandle.cpp.o
+
+.PHONY : TradingHandle.o
+
+# target to build an object file
+TradingHandle.cpp.o:
+	$(MAKE) -f CMakeFiles/AutoHedge.dir/build.make CMakeFiles/AutoHedge.dir/TradingHandle.cpp.o
+.PHONY : TradingHandle.cpp.o
+
+TradingHandle.i: TradingHandle.cpp.i
+
+.PHONY : TradingHandle.i
+
+# target to preprocess a source file
+TradingHandle.cpp.i:
+	$(MAKE) -f CMakeFiles/AutoHedge.dir/build.make CMakeFiles/AutoHedge.dir/TradingHandle.cpp.i
+.PHONY : TradingHandle.cpp.i
+
+TradingHandle.s: TradingHandle.cpp.s
+
+.PHONY : TradingHandle.s
+
+# target to generate assembly for a file
+TradingHandle.cpp.s:
+	$(MAKE) -f CMakeFiles/AutoHedge.dir/build.make CMakeFiles/AutoHedge.dir/TradingHandle.cpp.s
+.PHONY : TradingHandle.cpp.s
 
 main.o: main.cpp.o
 
@@ -172,10 +267,21 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... CTPClientDemo"
+	@echo "... rebuild_cache"
 	@echo "... AutoHedge"
+	@echo "... DBDriver.o"
+	@echo "... DBDriver.i"
+	@echo "... DBDriver.s"
+	@echo "... HedgeDriver.o"
+	@echo "... HedgeDriver.i"
+	@echo "... HedgeDriver.s"
+	@echo "... MarketDataHandle.o"
+	@echo "... MarketDataHandle.i"
+	@echo "... MarketDataHandle.s"
+	@echo "... TradingHandle.o"
+	@echo "... TradingHandle.i"
+	@echo "... TradingHandle.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

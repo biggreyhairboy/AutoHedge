@@ -1,4 +1,4 @@
-# Install script for directory: /home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge
+# Install script for directory: /home/patrick/ClionProjects/AutoHedge
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/patrick/ClionProjects/AutoHedge/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

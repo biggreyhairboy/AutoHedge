@@ -1,9 +1,42 @@
-/home/patrick/Downloads/clion-2016.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge
-CMake Error at CMakeLists.txt:39 (target_link_libraries):
-  Cannot specify link libraries for target "CTPClientDemo" which is not built
-  by this project.
+/home/patrick/Downloads/clion-2016.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/patrick/ClionProjects/AutoHedge
+CMake Warning at /home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:743 (message):
+  Imported targets not available for Boost version 106200
+Call Stack (most recent call first):
+  /home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:842 (_Boost_COMPONENT_DEPENDENCIES)
+  /home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:1395 (_Boost_MISSING_DEPENDENCIES)
+  CMakeLists.txt:9 (find_package)
 
 
--- Configuring incomplete, errors occurred!
-See also "/home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/cmake-build-debug/CMakeFiles/CMakeOutput.log".
-See also "/home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/cmake-build-debug/CMakeFiles/CMakeError.log".
+CMake Warning at /home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:743 (message):
+  Imported targets not available for Boost version 106200
+Call Stack (most recent call first):
+  /home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:842 (_Boost_COMPONENT_DEPENDENCIES)
+  /home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:1395 (_Boost_MISSING_DEPENDENCIES)
+  CMakeLists.txt:9 (find_package)
+
+
+CMake Warning at /home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:743 (message):
+  Imported targets not available for Boost version 106200
+Call Stack (most recent call first):
+  /home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:842 (_Boost_COMPONENT_DEPENDENCIES)
+  /home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:1395 (_Boost_MISSING_DEPENDENCIES)
+  CMakeLists.txt:9 (find_package)
+
+
+CMake Warning at /home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:743 (message):
+  Imported targets not available for Boost version 106200
+Call Stack (most recent call first):
+  /home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:842 (_Boost_COMPONENT_DEPENDENCIES)
+  /home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:1395 (_Boost_MISSING_DEPENDENCIES)
+  CMakeLists.txt:9 (find_package)
+
+
+-- Boost version: 1.62.0
+-- Found the following Boost libraries:
+--   log
+--   system
+--   thread
+--   filesystem
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/patrick/ClionProjects/AutoHedge/cmake-build-debug

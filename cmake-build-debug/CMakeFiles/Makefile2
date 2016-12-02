@@ -57,47 +57,10 @@ RM = /home/patrick/Downloads/clion-2016.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge
+CMAKE_SOURCE_DIR = /home/patrick/ClionProjects/AutoHedge
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/cmake-build-debug
-
-#=============================================================================
-# Target rules for target CMakeFiles/CTPClientDemo.dir
-
-# All Build rule for target.
-CMakeFiles/CTPClientDemo.dir/all:
-	$(MAKE) -f CMakeFiles/CTPClientDemo.dir/build.make CMakeFiles/CTPClientDemo.dir/depend
-	$(MAKE) -f CMakeFiles/CTPClientDemo.dir/build.make CMakeFiles/CTPClientDemo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/cmake-build-debug/CMakeFiles --progress-num= "Built target CTPClientDemo"
-.PHONY : CMakeFiles/CTPClientDemo.dir/all
-
-# Include target in all.
-all: CMakeFiles/CTPClientDemo.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/CTPClientDemo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/cmake-build-debug/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/CTPClientDemo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/CTPClientDemo.dir/rule
-
-# Convenience name for target.
-CTPClientDemo: CMakeFiles/CTPClientDemo.dir/rule
-
-.PHONY : CTPClientDemo
-
-# clean rule for target.
-CMakeFiles/CTPClientDemo.dir/clean:
-	$(MAKE) -f CMakeFiles/CTPClientDemo.dir/build.make CMakeFiles/CTPClientDemo.dir/clean
-.PHONY : CMakeFiles/CTPClientDemo.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/CTPClientDemo.dir/clean
-
-.PHONY : clean
+CMAKE_BINARY_DIR = /home/patrick/ClionProjects/AutoHedge/cmake-build-debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/AutoHedge.dir
@@ -106,7 +69,7 @@ clean: CMakeFiles/CTPClientDemo.dir/clean
 CMakeFiles/AutoHedge.dir/all:
 	$(MAKE) -f CMakeFiles/AutoHedge.dir/build.make CMakeFiles/AutoHedge.dir/depend
 	$(MAKE) -f CMakeFiles/AutoHedge.dir/build.make CMakeFiles/AutoHedge.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target AutoHedge"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target AutoHedge"
 .PHONY : CMakeFiles/AutoHedge.dir/all
 
 # Include target in all.
@@ -116,9 +79,9 @@ all: CMakeFiles/AutoHedge.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/AutoHedge.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/AutoHedge.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/AutoHedge.dir/rule
 
 # Convenience name for target.

@@ -22,12 +22,12 @@
 #include <boost/property_tree/ptree.hpp>
 #include <boost/property_tree/ini_parser.hpp>
 #include <boost/log/utility/setup/file.hpp>
-#include <ql/quantlib.hpp>
 
 #include "ctpapi_linux64/ThostFtdcMdApi.h"
 #include "ctpapi_linux64/ThostFtdcTraderApi.h"
 #include "MarketDataHandle.h"
 #include "TradingHandle.h"
+#include "HedgeDriver.h"
 
 #include "DBDriver.h"
 
@@ -81,11 +81,11 @@ void tradeThread(char* FRONT_ADDR_trade, TThostFtdcBrokerIDType brokerid, TThost
 }
 
 int main() {
-    cout << "开始吧" <<endl;
+    cout << "AutoHedge" << endl;
     //配置文件加上default值，防止exception
     //read config
     boost::property_tree::ptree pt;
-    boost::property_tree::ini_parser::read_ini("/home/patrick/ClionProjects/CTPClientDemo/CTPClientDemo.ini", pt);
+    boost::property_tree::ini_parser::read_ini("/home/patrick/ClionProjects/AutoHedge/AutoHedge.ini", pt);
     //server
     string MF= pt.get<std::string>("Server_IP.MarketFront");
     string TF = pt.get<std::string>("Server_IP.TradeFront");
@@ -111,16 +111,26 @@ int main() {
     int iInstrumentID = 2;
     string SubscribeSymbolList = pt.get<std::string>("MarketData.SubscribeSymbolList");
     vector<string> ppIntrumentID(split(SubscribeSymbolList, ','));
+    
+    //log
     logging::add_file_log(pt.get<std::string>("CTPClientDemo.LogPath"));
-    //trading
-    string tradeinstrument = pt.get<std::string>("Trading.tradeinstrument");
-    char tinstrumemt[chararraylength];
-    strcpy(tinstrumemt, tradeinstrument.c_str());
-    int quantity = pt.get<int>("Trading.quantity");
-    double price = pt.get<double>("Trading.price");
-    string strdirection = pt.get<std::string>("Trading.direction");
-    char direction = strdirection.at(0);
-    strcpy(FRONT_ADDR_quote, TF.c_str());
+
+    //option import :BasicParameters
+    string direction = pt.get<std::string>("BasicParameters.direction");
+    int type = pt.get<int>("BasicParameters.type");
+    string underlying = pt.get<std::string>("BasicParameters.underlying");
+    double strikeprice = pt.get<double>("BasicParameters.strikeprice");
+    double lastprice = pt.get<double>("BasicParameters.lastprice");
+    string maturity = pt.get<std::string>("BasicParameters.maturity");
+    double vol = pt.get<double>("BasicParameters.vol");
+    double freedelta = pt.get<double>("BasicParameters.freedelta");
+    int HedgeTendency = pt.get<int>("BasicParameters.HedgeTendency");
+    int HedgeStrategy = pt.get<int>("BasicParameters.HedgeStrategy");
+    int PreQuantity = pt.get<int>("BasicParameters.PreQuantity");
+    Real dividend = 0.0;
+    Real riskfreerate = 0.06;
+
+    HedgeDriver hd(maturity, Option::Type(type), lastprice, strikeprice,dividend, riskfreerate, vol);
 
     BOOST_LOG_TRIVIAL(info)<<"quote thread started ...";
     //cout << "quote thread started .... " << endl;

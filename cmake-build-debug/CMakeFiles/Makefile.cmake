@@ -14,7 +14,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeCInformation.cmake"
   "/home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeCXXInformation.cmake"
   "/home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeCommonLanguageInclude.cmake"
-  "/home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeConfigurableFile.in"
   "/home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
   "/home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeFindCodeBlocks.cmake"
   "/home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeFindDependencyMacro.cmake"
@@ -23,8 +22,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeParseArguments.cmake"
   "/home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeSystemSpecificInformation.cmake"
   "/home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CMakeSystemSpecificInitialize.cmake"
-  "/home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CheckFunctionExists.c"
-  "/home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CheckIncludeFile.c.in"
   "/home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CheckIncludeFile.cmake"
   "/home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CheckLibraryExists.cmake"
   "/home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CheckSymbolExists.cmake"
@@ -56,6 +53,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/CTPClientDemo.dir/DependInfo.cmake"
   "CMakeFiles/AutoHedge.dir/DependInfo.cmake"
   )

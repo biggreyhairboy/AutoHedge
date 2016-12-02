@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f7bd3/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f7bd3.dir/build.make CMakeFiles/cmTC_f7bd3.dir/build
-make[1]: Entering directory '/home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f7bd3.dir/CheckSymbolExists.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_f7bd3.dir/CheckSymbolExists.c.o   -c /home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_f7bd3
-/home/patrick/Downloads/clion-2016.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7bd3.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_f7bd3.dir/CheckSymbolExists.c.o  -o cmTC_f7bd3 
-CMakeFiles/cmTC_f7bd3.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_bc14a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bc14a.dir/build.make CMakeFiles/cmTC_bc14a.dir/build
+make[1]: Entering directory '/home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bc14a.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_bc14a.dir/CheckSymbolExists.c.o   -c /home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_bc14a
+/home/patrick/Downloads/clion-2016.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bc14a.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_bc14a.dir/CheckSymbolExists.c.o  -o cmTC_bc14a 
+CMakeFiles/cmTC_bc14a.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_f7bd3.dir/build.make:97: recipe for target 'cmTC_f7bd3' failed
-make[1]: *** [cmTC_f7bd3] Error 1
-make[1]: Leaving directory '/home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_f7bd3/fast' failed
-make: *** [cmTC_f7bd3/fast] Error 2
+CMakeFiles/cmTC_bc14a.dir/build.make:97: recipe for target 'cmTC_bc14a' failed
+make[1]: *** [cmTC_bc14a] Error 1
+make[1]: Leaving directory '/home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_bc14a/fast' failed
+make: *** [cmTC_bc14a/fast] Error 2
 
-File /home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,22 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5888e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5888e.dir/build.make CMakeFiles/cmTC_5888e.dir/build
-make[1]: Entering directory '/home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5888e.dir/CheckFunctionExists.c.o
-/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_5888e.dir/CheckFunctionExists.c.o   -c /home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CheckFunctionExists.c
-Linking C executable cmTC_5888e
-/home/patrick/Downloads/clion-2016.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5888e.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_5888e.dir/CheckFunctionExists.c.o  -o cmTC_5888e -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_69348/fast"
+/usr/bin/make -f CMakeFiles/cmTC_69348.dir/build.make CMakeFiles/cmTC_69348.dir/build
+make[1]: Entering directory '/home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_69348.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_69348.dir/CheckFunctionExists.c.o   -c /home/patrick/Downloads/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CheckFunctionExists.c
+Linking C executable cmTC_69348
+/home/patrick/Downloads/clion-2016.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_69348.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_69348.dir/CheckFunctionExists.c.o  -o cmTC_69348 -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_5888e.dir/build.make:97: recipe for target 'cmTC_5888e' failed
-make[1]: *** [cmTC_5888e] Error 1
-make[1]: Leaving directory '/home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_5888e/fast' failed
-make: *** [cmTC_5888e/fast] Error 2
+CMakeFiles/cmTC_69348.dir/build.make:97: recipe for target 'cmTC_69348' failed
+make[1]: *** [cmTC_69348] Error 1
+make[1]: Leaving directory '/home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_69348/fast' failed
+make: *** [cmTC_69348/fast] Error 2
 
 

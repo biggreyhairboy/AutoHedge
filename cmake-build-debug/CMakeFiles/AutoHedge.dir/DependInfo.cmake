@@ -4,7 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/main.cpp" "/home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/cmake-build-debug/CMakeFiles/AutoHedge.dir/main.cpp.o"
+  "/home/patrick/ClionProjects/AutoHedge/DBDriver.cpp" "/home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles/AutoHedge.dir/DBDriver.cpp.o"
+  "/home/patrick/ClionProjects/AutoHedge/HedgeDriver.cpp" "/home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.o"
+  "/home/patrick/ClionProjects/AutoHedge/MarketDataHandle.cpp" "/home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles/AutoHedge.dir/MarketDataHandle.cpp.o"
+  "/home/patrick/ClionProjects/AutoHedge/TradingHandle.cpp" "/home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles/AutoHedge.dir/TradingHandle.cpp.o"
+  "/home/patrick/ClionProjects/AutoHedge/main.cpp" "/home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles/AutoHedge.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -16,6 +20,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/home/patrick/Documents/boost_1_62_0"
   )
 
 # Targets to which this target links.
