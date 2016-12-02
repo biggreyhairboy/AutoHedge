@@ -3,7 +3,6 @@
 //
 
 #include "HedgeDriver.h"
-
 HedgeDriver::HedgeDriver(string maturitydate, Option::Type optiontype, Real underlyingprice, Real strikeprice,
                          Spread dividend, Rate riskfreerate, Volatility vol): europeanExercise(new EuropeanExercise(maturity)),
                                                                               payoff(new PlainVanillaPayoff(type, strike)),

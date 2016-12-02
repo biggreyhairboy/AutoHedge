@@ -5,6 +5,7 @@
 #ifndef AUTOHEDGE_HEDGEDRIVER_H
 #define AUTOHEDGE_HEDGEDRIVER_H
 
+
 #include <string>
 #include <boost/timer.hpp>
 #include <iomanip>
@@ -15,10 +16,10 @@ using namespace QuantLib;
 
 class HedgeDriver {
 public:
-    VanillaOption europeanOption;
+
     HedgeDriver(string maturity, Option::Type type, Real underlying, Real strike, Spread dividendYield, Rate riskfreerate, Volatility vol );
 
-
+    VanillaOption europeanOption;
 private:
     // set up dates
     Calendar calendar;
@@ -39,6 +40,5 @@ private:
     boost::shared_ptr<StrikedTypePayoff> payoff;
 
 };
-
 
 #endif //AUTOHEDGE_HEDGEDRIVER_H
