@@ -1,0 +1,9 @@
+/home/patrick/Downloads/clion-2016.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge
+CMake Error at CMakeLists.txt:39 (target_link_libraries):
+  Cannot specify link libraries for target "CTPClientDemo" which is not built
+  by this project.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/cmake-build-debug/CMakeFiles/CMakeError.log".

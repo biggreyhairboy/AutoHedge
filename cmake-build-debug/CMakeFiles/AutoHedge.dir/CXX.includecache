@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/patrick/ClionProjects/CppConcurrencyInAction/AutoHedge/main.cpp
+ql/quantlib.hpp
+-
+float.h
+-
+boost/timer.hpp
+-
+iostream
+-
+iomanip
+-
+
