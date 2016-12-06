@@ -46,9 +46,9 @@
 				<Compiler>
 					<Add option="-DBOOST_ALL_DYN_LINK"/>
 					<Add option="-DBOOST_LOG_DYN_LINK"/>
-					<Add directory="/home/patrick/Documents/boost_1_62_0"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include/boost"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
@@ -72,9 +72,9 @@
 				<Compiler>
 					<Add option="-DBOOST_ALL_DYN_LINK"/>
 					<Add option="-DBOOST_LOG_DYN_LINK"/>
-					<Add directory="/home/patrick/Documents/boost_1_62_0"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include/boost"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>

@@ -48,7 +48,7 @@ Boost_FILESYSTEM_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_files
 Boost_FILESYSTEM_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 
 //Path to a file.
-Boost_INCLUDE_DIR:PATH=/home/patrick/Documents/boost_1_62_0
+Boost_INCLUDE_DIR:PATH=/usr/local/include
 
 //Boost library directory DEBUG
 Boost_LIBRARY_DIR_DEBUG:PATH=/usr/lib/x86_64-linux-gnu
@@ -447,11 +447,11 @@ ProcessorCount_cmd_getconf-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_sysctl
 ProcessorCount_cmd_sysctl-ADVANCED:INTERNAL=1
 //Last used BOOST_ROOT value.
-_BOOST_ROOT_LAST:INTERNAL=/home/patrick/Documents/boost_1_62_0
+_BOOST_ROOT_LAST:INTERNAL=/usr/local/include/boost/
 //Components requested for this build tree.
 _Boost_COMPONENTS_SEARCHED:INTERNAL=atomic;chrono;date_time;filesystem;log;log_setup;regex;system;thread
 //Last used Boost_INCLUDE_DIR value.
-_Boost_INCLUDE_DIR_LAST:INTERNAL=/home/patrick/Documents/boost_1_62_0
+_Boost_INCLUDE_DIR_LAST:INTERNAL=/usr/local/include
 //Last used Boost_LIBRARY_DIR_DEBUG value.
 _Boost_LIBRARY_DIR_DEBUG_LAST:INTERNAL=/usr/lib/x86_64-linux-gnu
 //Last used Boost_LIBRARY_DIR_RELEASE value.

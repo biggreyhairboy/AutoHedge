@@ -63,15 +63,15 @@ include CMakeFiles/AutoHedge.dir/flags.make
 CMakeFiles/AutoHedge.dir/main.cpp.o: CMakeFiles/AutoHedge.dir/flags.make
 CMakeFiles/AutoHedge.dir/main.cpp.o: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/AutoHedge.dir/main.cpp.o"
-	/usr/bin/clang++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AutoHedge.dir/main.cpp.o -c /home/patrick/ClionProjects/AutoHedge/main.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AutoHedge.dir/main.cpp.o -c /home/patrick/ClionProjects/AutoHedge/main.cpp
 
 CMakeFiles/AutoHedge.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AutoHedge.dir/main.cpp.i"
-	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/patrick/ClionProjects/AutoHedge/main.cpp > CMakeFiles/AutoHedge.dir/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/patrick/ClionProjects/AutoHedge/main.cpp > CMakeFiles/AutoHedge.dir/main.cpp.i
 
 CMakeFiles/AutoHedge.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AutoHedge.dir/main.cpp.s"
-	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/patrick/ClionProjects/AutoHedge/main.cpp -o CMakeFiles/AutoHedge.dir/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/patrick/ClionProjects/AutoHedge/main.cpp -o CMakeFiles/AutoHedge.dir/main.cpp.s
 
 CMakeFiles/AutoHedge.dir/main.cpp.o.requires:
 
@@ -87,15 +87,15 @@ CMakeFiles/AutoHedge.dir/main.cpp.o.provides.build: CMakeFiles/AutoHedge.dir/mai
 CMakeFiles/AutoHedge.dir/MarketDataHandle.cpp.o: CMakeFiles/AutoHedge.dir/flags.make
 CMakeFiles/AutoHedge.dir/MarketDataHandle.cpp.o: ../MarketDataHandle.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AutoHedge.dir/MarketDataHandle.cpp.o"
-	/usr/bin/clang++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AutoHedge.dir/MarketDataHandle.cpp.o -c /home/patrick/ClionProjects/AutoHedge/MarketDataHandle.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AutoHedge.dir/MarketDataHandle.cpp.o -c /home/patrick/ClionProjects/AutoHedge/MarketDataHandle.cpp
 
 CMakeFiles/AutoHedge.dir/MarketDataHandle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AutoHedge.dir/MarketDataHandle.cpp.i"
-	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/patrick/ClionProjects/AutoHedge/MarketDataHandle.cpp > CMakeFiles/AutoHedge.dir/MarketDataHandle.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/patrick/ClionProjects/AutoHedge/MarketDataHandle.cpp > CMakeFiles/AutoHedge.dir/MarketDataHandle.cpp.i
 
 CMakeFiles/AutoHedge.dir/MarketDataHandle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AutoHedge.dir/MarketDataHandle.cpp.s"
-	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/patrick/ClionProjects/AutoHedge/MarketDataHandle.cpp -o CMakeFiles/AutoHedge.dir/MarketDataHandle.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/patrick/ClionProjects/AutoHedge/MarketDataHandle.cpp -o CMakeFiles/AutoHedge.dir/MarketDataHandle.cpp.s
 
 CMakeFiles/AutoHedge.dir/MarketDataHandle.cpp.o.requires:
 
@@ -111,15 +111,15 @@ CMakeFiles/AutoHedge.dir/MarketDataHandle.cpp.o.provides.build: CMakeFiles/AutoH
 CMakeFiles/AutoHedge.dir/TradingHandle.cpp.o: CMakeFiles/AutoHedge.dir/flags.make
 CMakeFiles/AutoHedge.dir/TradingHandle.cpp.o: ../TradingHandle.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AutoHedge.dir/TradingHandle.cpp.o"
-	/usr/bin/clang++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AutoHedge.dir/TradingHandle.cpp.o -c /home/patrick/ClionProjects/AutoHedge/TradingHandle.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AutoHedge.dir/TradingHandle.cpp.o -c /home/patrick/ClionProjects/AutoHedge/TradingHandle.cpp
 
 CMakeFiles/AutoHedge.dir/TradingHandle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AutoHedge.dir/TradingHandle.cpp.i"
-	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/patrick/ClionProjects/AutoHedge/TradingHandle.cpp > CMakeFiles/AutoHedge.dir/TradingHandle.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/patrick/ClionProjects/AutoHedge/TradingHandle.cpp > CMakeFiles/AutoHedge.dir/TradingHandle.cpp.i
 
 CMakeFiles/AutoHedge.dir/TradingHandle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AutoHedge.dir/TradingHandle.cpp.s"
-	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/patrick/ClionProjects/AutoHedge/TradingHandle.cpp -o CMakeFiles/AutoHedge.dir/TradingHandle.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/patrick/ClionProjects/AutoHedge/TradingHandle.cpp -o CMakeFiles/AutoHedge.dir/TradingHandle.cpp.s
 
 CMakeFiles/AutoHedge.dir/TradingHandle.cpp.o.requires:
 
@@ -135,15 +135,15 @@ CMakeFiles/AutoHedge.dir/TradingHandle.cpp.o.provides.build: CMakeFiles/AutoHedg
 CMakeFiles/AutoHedge.dir/DBDriver.cpp.o: CMakeFiles/AutoHedge.dir/flags.make
 CMakeFiles/AutoHedge.dir/DBDriver.cpp.o: ../DBDriver.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AutoHedge.dir/DBDriver.cpp.o"
-	/usr/bin/clang++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AutoHedge.dir/DBDriver.cpp.o -c /home/patrick/ClionProjects/AutoHedge/DBDriver.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AutoHedge.dir/DBDriver.cpp.o -c /home/patrick/ClionProjects/AutoHedge/DBDriver.cpp
 
 CMakeFiles/AutoHedge.dir/DBDriver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AutoHedge.dir/DBDriver.cpp.i"
-	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/patrick/ClionProjects/AutoHedge/DBDriver.cpp > CMakeFiles/AutoHedge.dir/DBDriver.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/patrick/ClionProjects/AutoHedge/DBDriver.cpp > CMakeFiles/AutoHedge.dir/DBDriver.cpp.i
 
 CMakeFiles/AutoHedge.dir/DBDriver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AutoHedge.dir/DBDriver.cpp.s"
-	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/patrick/ClionProjects/AutoHedge/DBDriver.cpp -o CMakeFiles/AutoHedge.dir/DBDriver.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/patrick/ClionProjects/AutoHedge/DBDriver.cpp -o CMakeFiles/AutoHedge.dir/DBDriver.cpp.s
 
 CMakeFiles/AutoHedge.dir/DBDriver.cpp.o.requires:
 
@@ -159,15 +159,15 @@ CMakeFiles/AutoHedge.dir/DBDriver.cpp.o.provides.build: CMakeFiles/AutoHedge.dir
 CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.o: CMakeFiles/AutoHedge.dir/flags.make
 CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.o: ../HedgeDriver.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.o"
-	/usr/bin/clang++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.o -c /home/patrick/ClionProjects/AutoHedge/HedgeDriver.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.o -c /home/patrick/ClionProjects/AutoHedge/HedgeDriver.cpp
 
 CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.i"
-	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/patrick/ClionProjects/AutoHedge/HedgeDriver.cpp > CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/patrick/ClionProjects/AutoHedge/HedgeDriver.cpp > CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.i
 
 CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.s"
-	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/patrick/ClionProjects/AutoHedge/HedgeDriver.cpp -o CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/patrick/ClionProjects/AutoHedge/HedgeDriver.cpp -o CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.s
 
 CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.o.requires:
 
@@ -199,10 +199,6 @@ AutoHedge: CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.o
 AutoHedge: CMakeFiles/AutoHedge.dir/build.make
 AutoHedge: ../ctpapi_linux64/thostmduserapi.so
 AutoHedge: ../ctpapi_linux64/thosttraderapi.so
-AutoHedge: /usr/lib/x86_64-linux-gnu/libboost_log.so
-AutoHedge: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-AutoHedge: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-AutoHedge: /usr/lib/x86_64-linux-gnu/libboost_system.so
 AutoHedge: CMakeFiles/AutoHedge.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable AutoHedge"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AutoHedge.dir/link.txt --verbose=$(VERBOSE)

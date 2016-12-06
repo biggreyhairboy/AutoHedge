@@ -1,3 +1,8 @@
+//europeanExercise(new EuropeanExercise(maturity)),
+//payoff(new PlainVanillaPayoff(type, strike)),
+//europeanOption(payoff, europeanExercise)
+
+
 ///* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- */
 //
 ///*!

@@ -20,7 +20,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/patrick/Documents/boost_1_62_0"
+  "/usr/local/include/boost"
+  "/usr/local/include"
   )
 
 # Targets to which this target links.

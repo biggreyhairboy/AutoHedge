@@ -7,7 +7,7 @@
 #include <cstring>
 #include <iostream>
 #include <iomanip>
-#include "boost/format.hpp"
+#include "/usr/local/include/boost/format.hpp"
 #include <math.h>
 #include <string>
 #include <iostream>
@@ -28,9 +28,9 @@ MarketDataHandle::MarketDataHandle(CThostFtdcMdApi* iMdapi, char *front_address,
     strppInstrument = ppinsturment;
     InstrumentID = insturmentid;
     dbDriver = dbdriver;
-    MarketTrend.insert({0, 0});
-    MarketTrend.insert({1, 0});
-    MarketTrend.insert({2, 0});
+//    MarketTrend.insert({0, 0});
+//    MarketTrend.insert({1, 0});
+//    MarketTrend.insert({2, 0});
 }
 
 void MarketDataHandle::OnFrontDisconnected(int nReason){

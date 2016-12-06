@@ -5,6 +5,7 @@
 #define CTPCLIENTDEMO_MARKETDATAHANDLE_H
 
 #include <string>
+#include <vector>
 #include <map>
 #include "DBDriver.h"
 #include "ctpapi_linux64/ThostFtdcMdApi.h"

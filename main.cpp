@@ -16,19 +16,17 @@
 #include <sstream>
 #include <vector>
 #include <thread>
-#include <boost/log/core.hpp>
-#include <boost/log/trivial.hpp>
-#include <boost/log/expressions.hpp>
-#include <boost/property_tree/ptree.hpp>
-#include <boost/property_tree/ini_parser.hpp>
-#include <boost/log/utility/setup/file.hpp>
-
+#include "/usr/local/include/boost/log/core.hpp"
+#include "/usr/local/include/boost/log/trivial.hpp"
+#include "/usr/local/include/boost/log/expressions.hpp"
+#include "/usr/local/include/boost/property_tree/ptree.hpp"
+#include "/usr/local/include/boost/property_tree/ini_parser.hpp"
+#include "/usr/local/include/boost/log/utility/setup/file.hpp"
 #include "ctpapi_linux64/ThostFtdcMdApi.h"
 #include "ctpapi_linux64/ThostFtdcTraderApi.h"
 #include "MarketDataHandle.h"
 #include "TradingHandle.h"
-#include "HedgeDriver.h"
-
+//#include "HedgeDriver.h"
 #include "DBDriver.h"
 
 using namespace std;
@@ -127,10 +125,17 @@ int main() {
     int HedgeTendency = pt.get<int>("BasicParameters.HedgeTendency");
     int HedgeStrategy = pt.get<int>("BasicParameters.HedgeStrategy");
     int PreQuantity = pt.get<int>("BasicParameters.PreQuantity");
-    Real dividend = 0.0;
-    Real riskfreerate = 0.06;
-
-    HedgeDriver hd(maturity, Option::Type(type), lastprice, strikeprice,dividend, riskfreerate, vol);
+//    Real dividend = 0.0;
+//    Real riskfreerate = 0.06;
+//    Date dmaturity = Date(15, December, 2016);
+//    dmaturity = Date(15, December, 2016);
+//    boost::shared_ptr<Exercise> europeanExercise;
+//    boost::shared_ptr<StrikedTypePayoff> payoff;
+//    europeanExercise = boost::shared_ptr<Exercise>(new EuropeanExercise(dmaturity));
+//    payoff = boost::shared_ptr<StrikedTypePayoff>(new PlainVanillaPayoff(Option::Type(type), strikeprice));
+//    HedgeDriver hd(europeanExercise, payoff, maturity, Option::Type(type), lastprice,
+//                   strikeprice,
+//                   dividend, riskfreerate, vol);
 
     BOOST_LOG_TRIVIAL(info)<<"quote thread started ...";
     //cout << "quote thread started .... " << endl;
