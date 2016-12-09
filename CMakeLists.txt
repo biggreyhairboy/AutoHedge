@@ -27,7 +27,7 @@ find_package(Threads)
 
 ADD_DEFINITIONS(-DBOOST_ALL_DYN_LINK)
 ADD_DEFINITIONS(-DBOOST_LOG_DYN_LINK)
-set(SOURCE_FILES main.cpp MarketDataHandle.cpp MarketDataHandle.h TradingHandle.cpp TradingHandle.h DBDriver.cpp DBDriver.h HedgeDriver.h HedgeDriver.cpp HedgeDriver.h)
+set(SOURCE_FILES main.cpp MarketDataHandle.cpp MarketDataHandle.h TradingHandle.cpp TradingHandle.h DBDriver.cpp DBDriver.h HedgeDriver.h HedgeDriver.cpp HedgeDriver.h AtestClass.cpp AtestClass.h OptionCalculator.cpp OptionCalculator.h)
 
 add_library(thostmduserapi SHARED IMPORTED)
 add_library(thosttraderapi SHARED IMPORTED)
@@ -43,4 +43,4 @@ message(${Boost_LOG_LIBRARY})
 message(${Boost_THREAD_LIBRARY})
 #target_link_libraries(AutoHedge QuantLib mysqlcppconn thostmduserapi thosttraderapi  ${Boost_LOG_LIBRARY} ${Boost_THREAD_LIBRARY} ${Boost_FILESYSTEM_LIBRARY} ${Boost_SYSTEM_LIBRARY})
 #${CMAKE_THREAD_LIBS_INIT}
-target_link_libraries(AutoHedge QuantLib mysqlcppconn thostmduserapi thosttraderapi -lpthread "/usr/local/lib/libboost_thread.so" "/usr/local/lib/libboost_system.so"  "/usr/local/lib/libboost_log.so")
+target_link_libraries(AutoHedge "/usr/local/lib/libQuantLib.so"  mysqlcppconn thostmduserapi thosttraderapi -lpthread "/usr/local/lib/libboost_thread.so" "/usr/local/lib/libboost_system.so"  "/usr/local/lib/libboost_log.so")

@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/AutoHedge.dir/TradingHandle.cpp.o"
   "CMakeFiles/AutoHedge.dir/DBDriver.cpp.o"
   "CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.o"
+  "CMakeFiles/AutoHedge.dir/AtestClass.cpp.o"
+  "CMakeFiles/AutoHedge.dir/OptionCalculator.cpp.o"
   "AutoHedge.pdb"
   "AutoHedge"
 )

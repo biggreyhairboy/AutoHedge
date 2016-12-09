@@ -39,6 +39,8 @@ Call Stack (most recent call first):
 --   filesystem
 hello boost 1.62
 /usr/local/include
+/usr/lib/x86_64-linux-gnu/libboost_log.so
+/usr/lib/x86_64-linux-gnu/libboost_thread.so
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/patrick/ClionProjects/AutoHedge/cmake-build-debug

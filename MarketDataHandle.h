@@ -1,14 +1,15 @@
 //
 // Created by biggreyhairboy on 7/21/16.
 //
-#ifndef CTPCLIENTDEMO_MARKETDATAHANDLE_H
-#define CTPCLIENTDEMO_MARKETDATAHANDLE_H
+#ifndef AUTOHEDGE_MARKETDATAHANDLE_H
+#define AUTOHEDGE_MARKETDATAHANDLE_H
 
 #include <string>
 #include <vector>
 #include <map>
 #include "DBDriver.h"
 #include "ctpapi_linux64/ThostFtdcMdApi.h"
+//#include "HedgeDriver.h"
 using namespace std;
 
 enum Trend{

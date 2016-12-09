@@ -5,7 +5,7 @@
 *** input：    期权要素与期货价格
 *** out：      中性的对冲头寸，交易记录
 *** other:
-*** environment:  1. C++11中thread库 2. 使用quantlib来对期权进行定价与计算希腊字母值 3. boost1.58读取配置文件，写日志等等
+*** environment:  1. C++11中thread库 2. 使用quantlib来对期权进行定价与计算希腊字母值 3. boost1.62读取配置文件，写日志等等
 *** todo:      1. 从数据库中读取欧式期权头寸（连接SQL SERVER的库文集再定
 ***            2. 可以对冲多个期权
                3. 从客户权益里扣除对冲的成本（这里主要指的是手续费）
@@ -26,11 +26,11 @@
 #include "ctpapi_linux64/ThostFtdcTraderApi.h"
 #include "MarketDataHandle.h"
 #include "TradingHandle.h"
-//#include "HedgeDriver.h"
-#include "DBDriver.h"
+#include "HedgeDriver.h"
 
 using namespace std;
 namespace  logging = boost::log;
+
 
 void split(const string &s, char delim, vector<string> &elems);
 vector<string> split(const string &s, char delim);
@@ -125,24 +125,21 @@ int main() {
     int HedgeTendency = pt.get<int>("BasicParameters.HedgeTendency");
     int HedgeStrategy = pt.get<int>("BasicParameters.HedgeStrategy");
     int PreQuantity = pt.get<int>("BasicParameters.PreQuantity");
-//    Real dividend = 0.0;
-//    Real riskfreerate = 0.06;
-//    Date dmaturity = Date(15, December, 2016);
-//    dmaturity = Date(15, December, 2016);
-//    boost::shared_ptr<Exercise> europeanExercise;
-//    boost::shared_ptr<StrikedTypePayoff> payoff;
-//    europeanExercise = boost::shared_ptr<Exercise>(new EuropeanExercise(dmaturity));
-//    payoff = boost::shared_ptr<StrikedTypePayoff>(new PlainVanillaPayoff(Option::Type(type), strikeprice));
-//    HedgeDriver hd(europeanExercise, payoff, maturity, Option::Type(type), lastprice,
-//                   strikeprice,
-//                   dividend, riskfreerate, vol);
+    Real dividend = 0.0;
+    Real riskfreerate = 0.06;
+    Date dmaturity = Date(15, December, 2016);
+    dmaturity = Date(15, December, 2016);
+    boost::shared_ptr<Exercise> europeanExercise;
+    boost::shared_ptr<StrikedTypePayoff> payoff;
 
-    BOOST_LOG_TRIVIAL(info)<<"quote thread started ...";
-    //cout << "quote thread started .... " << endl;
-    std::thread QuoteT(quoteThread, FRONT_ADDR_quote, brokerIDType, investorIDType, passwordType,
-                       &dbDriver, ppIntrumentID,iInstrumentID);
-    QuoteT.detach();
-
+    HedgeDriver hd(maturity, Option::Type(type), lastprice, strikeprice, dividend, riskfreerate, vol);
+    cout <<"value of the option" << hd.GetOptionValue() << endl;
+//    BOOST_LOG_TRIVIAL(info)<<"quote thread started ...";
+//    //cout << "quote thread started .... " << endl;
+//    std::thread QuoteT(quoteThread, FRONT_ADDR_quote, brokerIDType, investorIDType, passwordType,
+//                       &dbDriver, ppIntrumentID,iInstrumentID);
+//    QuoteT.detach();
+//
 //    BOOST_LOG_TRIVIAL(info)<<"trade thread started ...";
 //    std::thread TradingT(tradeThread, FRONT_ADDR_quote, brokerIDType, investorIDType, passwordType,
 //                       &dbDriver, tinstrumemt, price, quantity, direction);

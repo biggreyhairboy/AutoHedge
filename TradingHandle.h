@@ -2,8 +2,8 @@
 // Created by biggreyhairboy on 7/27/16.
 //
 
-#ifndef CTPCLIENTDEMO_TRADINGHANDLE_H
-#define CTPCLIENTDEMO_TRADINGHANDLE_H
+#ifndef AUTOHEDGE_TRADINGHANDLE_H
+#define AUTOHEDGE_TRADINGHANDLE_H
 
 #include "ctpapi_linux64/ThostFtdcTraderApi.h"
 #include "DBDriver.h"

@@ -180,13 +180,63 @@ CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.o.provides: CMakeFiles/AutoHedge.dir/He
 CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.o.provides.build: CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.o
 
 
+CMakeFiles/AutoHedge.dir/AtestClass.cpp.o: CMakeFiles/AutoHedge.dir/flags.make
+CMakeFiles/AutoHedge.dir/AtestClass.cpp.o: ../AtestClass.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/AutoHedge.dir/AtestClass.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AutoHedge.dir/AtestClass.cpp.o -c /home/patrick/ClionProjects/AutoHedge/AtestClass.cpp
+
+CMakeFiles/AutoHedge.dir/AtestClass.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AutoHedge.dir/AtestClass.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/patrick/ClionProjects/AutoHedge/AtestClass.cpp > CMakeFiles/AutoHedge.dir/AtestClass.cpp.i
+
+CMakeFiles/AutoHedge.dir/AtestClass.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AutoHedge.dir/AtestClass.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/patrick/ClionProjects/AutoHedge/AtestClass.cpp -o CMakeFiles/AutoHedge.dir/AtestClass.cpp.s
+
+CMakeFiles/AutoHedge.dir/AtestClass.cpp.o.requires:
+
+.PHONY : CMakeFiles/AutoHedge.dir/AtestClass.cpp.o.requires
+
+CMakeFiles/AutoHedge.dir/AtestClass.cpp.o.provides: CMakeFiles/AutoHedge.dir/AtestClass.cpp.o.requires
+	$(MAKE) -f CMakeFiles/AutoHedge.dir/build.make CMakeFiles/AutoHedge.dir/AtestClass.cpp.o.provides.build
+.PHONY : CMakeFiles/AutoHedge.dir/AtestClass.cpp.o.provides
+
+CMakeFiles/AutoHedge.dir/AtestClass.cpp.o.provides.build: CMakeFiles/AutoHedge.dir/AtestClass.cpp.o
+
+
+CMakeFiles/AutoHedge.dir/OptionCalculator.cpp.o: CMakeFiles/AutoHedge.dir/flags.make
+CMakeFiles/AutoHedge.dir/OptionCalculator.cpp.o: ../OptionCalculator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/AutoHedge.dir/OptionCalculator.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AutoHedge.dir/OptionCalculator.cpp.o -c /home/patrick/ClionProjects/AutoHedge/OptionCalculator.cpp
+
+CMakeFiles/AutoHedge.dir/OptionCalculator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AutoHedge.dir/OptionCalculator.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/patrick/ClionProjects/AutoHedge/OptionCalculator.cpp > CMakeFiles/AutoHedge.dir/OptionCalculator.cpp.i
+
+CMakeFiles/AutoHedge.dir/OptionCalculator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AutoHedge.dir/OptionCalculator.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/patrick/ClionProjects/AutoHedge/OptionCalculator.cpp -o CMakeFiles/AutoHedge.dir/OptionCalculator.cpp.s
+
+CMakeFiles/AutoHedge.dir/OptionCalculator.cpp.o.requires:
+
+.PHONY : CMakeFiles/AutoHedge.dir/OptionCalculator.cpp.o.requires
+
+CMakeFiles/AutoHedge.dir/OptionCalculator.cpp.o.provides: CMakeFiles/AutoHedge.dir/OptionCalculator.cpp.o.requires
+	$(MAKE) -f CMakeFiles/AutoHedge.dir/build.make CMakeFiles/AutoHedge.dir/OptionCalculator.cpp.o.provides.build
+.PHONY : CMakeFiles/AutoHedge.dir/OptionCalculator.cpp.o.provides
+
+CMakeFiles/AutoHedge.dir/OptionCalculator.cpp.o.provides.build: CMakeFiles/AutoHedge.dir/OptionCalculator.cpp.o
+
+
 # Object files for target AutoHedge
 AutoHedge_OBJECTS = \
 "CMakeFiles/AutoHedge.dir/main.cpp.o" \
 "CMakeFiles/AutoHedge.dir/MarketDataHandle.cpp.o" \
 "CMakeFiles/AutoHedge.dir/TradingHandle.cpp.o" \
 "CMakeFiles/AutoHedge.dir/DBDriver.cpp.o" \
-"CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.o"
+"CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.o" \
+"CMakeFiles/AutoHedge.dir/AtestClass.cpp.o" \
+"CMakeFiles/AutoHedge.dir/OptionCalculator.cpp.o"
 
 # External object files for target AutoHedge
 AutoHedge_EXTERNAL_OBJECTS =
@@ -196,11 +246,17 @@ AutoHedge: CMakeFiles/AutoHedge.dir/MarketDataHandle.cpp.o
 AutoHedge: CMakeFiles/AutoHedge.dir/TradingHandle.cpp.o
 AutoHedge: CMakeFiles/AutoHedge.dir/DBDriver.cpp.o
 AutoHedge: CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.o
+AutoHedge: CMakeFiles/AutoHedge.dir/AtestClass.cpp.o
+AutoHedge: CMakeFiles/AutoHedge.dir/OptionCalculator.cpp.o
 AutoHedge: CMakeFiles/AutoHedge.dir/build.make
+AutoHedge: /usr/local/lib/libQuantLib.so
 AutoHedge: ../ctpapi_linux64/thostmduserapi.so
 AutoHedge: ../ctpapi_linux64/thosttraderapi.so
+AutoHedge: /usr/local/lib/libboost_thread.so
+AutoHedge: /usr/local/lib/libboost_system.so
+AutoHedge: /usr/local/lib/libboost_log.so
 AutoHedge: CMakeFiles/AutoHedge.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable AutoHedge"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/patrick/ClionProjects/AutoHedge/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable AutoHedge"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AutoHedge.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -213,6 +269,8 @@ CMakeFiles/AutoHedge.dir/requires: CMakeFiles/AutoHedge.dir/MarketDataHandle.cpp
 CMakeFiles/AutoHedge.dir/requires: CMakeFiles/AutoHedge.dir/TradingHandle.cpp.o.requires
 CMakeFiles/AutoHedge.dir/requires: CMakeFiles/AutoHedge.dir/DBDriver.cpp.o.requires
 CMakeFiles/AutoHedge.dir/requires: CMakeFiles/AutoHedge.dir/HedgeDriver.cpp.o.requires
+CMakeFiles/AutoHedge.dir/requires: CMakeFiles/AutoHedge.dir/AtestClass.cpp.o.requires
+CMakeFiles/AutoHedge.dir/requires: CMakeFiles/AutoHedge.dir/OptionCalculator.cpp.o.requires
 
 .PHONY : CMakeFiles/AutoHedge.dir/requires
 

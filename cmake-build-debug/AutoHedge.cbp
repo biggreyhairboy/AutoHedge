@@ -90,6 +90,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/patrick/ClionProjects/AutoHedge/AtestClass.cpp">
+			<Option target="AutoHedge"/>
+		</Unit>
+		<Unit filename="/home/patrick/ClionProjects/AutoHedge/AtestClass.h">
+			<Option target="AutoHedge"/>
+		</Unit>
 		<Unit filename="/home/patrick/ClionProjects/AutoHedge/DBDriver.cpp">
 			<Option target="AutoHedge"/>
 		</Unit>
@@ -106,6 +112,12 @@
 			<Option target="AutoHedge"/>
 		</Unit>
 		<Unit filename="/home/patrick/ClionProjects/AutoHedge/MarketDataHandle.h">
+			<Option target="AutoHedge"/>
+		</Unit>
+		<Unit filename="/home/patrick/ClionProjects/AutoHedge/OptionCalculator.cpp">
+			<Option target="AutoHedge"/>
+		</Unit>
+		<Unit filename="/home/patrick/ClionProjects/AutoHedge/OptionCalculator.h">
 			<Option target="AutoHedge"/>
 		</Unit>
 		<Unit filename="/home/patrick/ClionProjects/AutoHedge/TradingHandle.cpp">

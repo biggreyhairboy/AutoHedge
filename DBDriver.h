@@ -2,8 +2,8 @@
 // Created by biggreyhairboy on 7/29/16.
 //
 
-#ifndef CTPCLIENTDEMO_DBDRIVER_H
-#define CTPCLIENTDEMO_DBDRIVER_H
+#ifndef AUTOHEDGE_DBDRIVER_H
+#define AUTOHEDGE_DBDRIVER_H
 
 #include <string>
 #include <istream>

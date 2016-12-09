@@ -126,6 +126,33 @@ AutoHedge/fast:
 	$(MAKE) -f CMakeFiles/AutoHedge.dir/build.make CMakeFiles/AutoHedge.dir/build
 .PHONY : AutoHedge/fast
 
+AtestClass.o: AtestClass.cpp.o
+
+.PHONY : AtestClass.o
+
+# target to build an object file
+AtestClass.cpp.o:
+	$(MAKE) -f CMakeFiles/AutoHedge.dir/build.make CMakeFiles/AutoHedge.dir/AtestClass.cpp.o
+.PHONY : AtestClass.cpp.o
+
+AtestClass.i: AtestClass.cpp.i
+
+.PHONY : AtestClass.i
+
+# target to preprocess a source file
+AtestClass.cpp.i:
+	$(MAKE) -f CMakeFiles/AutoHedge.dir/build.make CMakeFiles/AutoHedge.dir/AtestClass.cpp.i
+.PHONY : AtestClass.cpp.i
+
+AtestClass.s: AtestClass.cpp.s
+
+.PHONY : AtestClass.s
+
+# target to generate assembly for a file
+AtestClass.cpp.s:
+	$(MAKE) -f CMakeFiles/AutoHedge.dir/build.make CMakeFiles/AutoHedge.dir/AtestClass.cpp.s
+.PHONY : AtestClass.cpp.s
+
 DBDriver.o: DBDriver.cpp.o
 
 .PHONY : DBDriver.o
@@ -207,6 +234,33 @@ MarketDataHandle.cpp.s:
 	$(MAKE) -f CMakeFiles/AutoHedge.dir/build.make CMakeFiles/AutoHedge.dir/MarketDataHandle.cpp.s
 .PHONY : MarketDataHandle.cpp.s
 
+OptionCalculator.o: OptionCalculator.cpp.o
+
+.PHONY : OptionCalculator.o
+
+# target to build an object file
+OptionCalculator.cpp.o:
+	$(MAKE) -f CMakeFiles/AutoHedge.dir/build.make CMakeFiles/AutoHedge.dir/OptionCalculator.cpp.o
+.PHONY : OptionCalculator.cpp.o
+
+OptionCalculator.i: OptionCalculator.cpp.i
+
+.PHONY : OptionCalculator.i
+
+# target to preprocess a source file
+OptionCalculator.cpp.i:
+	$(MAKE) -f CMakeFiles/AutoHedge.dir/build.make CMakeFiles/AutoHedge.dir/OptionCalculator.cpp.i
+.PHONY : OptionCalculator.cpp.i
+
+OptionCalculator.s: OptionCalculator.cpp.s
+
+.PHONY : OptionCalculator.s
+
+# target to generate assembly for a file
+OptionCalculator.cpp.s:
+	$(MAKE) -f CMakeFiles/AutoHedge.dir/build.make CMakeFiles/AutoHedge.dir/OptionCalculator.cpp.s
+.PHONY : OptionCalculator.cpp.s
+
 TradingHandle.o: TradingHandle.cpp.o
 
 .PHONY : TradingHandle.o
@@ -270,6 +324,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... AutoHedge"
+	@echo "... AtestClass.o"
+	@echo "... AtestClass.i"
+	@echo "... AtestClass.s"
 	@echo "... DBDriver.o"
 	@echo "... DBDriver.i"
 	@echo "... DBDriver.s"
@@ -279,6 +336,9 @@ help:
 	@echo "... MarketDataHandle.o"
 	@echo "... MarketDataHandle.i"
 	@echo "... MarketDataHandle.s"
+	@echo "... OptionCalculator.o"
+	@echo "... OptionCalculator.i"
+	@echo "... OptionCalculator.s"
 	@echo "... TradingHandle.o"
 	@echo "... TradingHandle.i"
 	@echo "... TradingHandle.s"

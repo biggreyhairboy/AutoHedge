@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/home/patrick/ClionProjects/AutoHedge/AtestClass.cpp
+AtestClass.h
+/home/patrick/ClionProjects/AutoHedge/AtestClass.h
+
+/home/patrick/ClionProjects/AutoHedge/AtestClass.h
+HedgeDriver.h
+/home/patrick/ClionProjects/AutoHedge/HedgeDriver.h
+
 /home/patrick/ClionProjects/AutoHedge/DBDriver.cpp
 DBDriver.h
 /home/patrick/ClionProjects/AutoHedge/DBDriver.h
@@ -41,7 +49,7 @@ iomanip
 -
 iostream
 -
-/usr/local/include/ql/quantlib.hpp
+ql/quantlib.hpp
 -
 
 /home/patrick/ClionProjects/AutoHedge/MarketDataHandle.cpp
@@ -75,6 +83,12 @@ DBDriver.h
 /home/patrick/ClionProjects/AutoHedge/DBDriver.h
 ctpapi_linux64/ThostFtdcMdApi.h
 /home/patrick/ClionProjects/AutoHedge/ctpapi_linux64/ThostFtdcMdApi.h
+
+/home/patrick/ClionProjects/AutoHedge/OptionCalculator.cpp
+OptionCalculator.h
+/home/patrick/ClionProjects/AutoHedge/OptionCalculator.h
+
+/home/patrick/ClionProjects/AutoHedge/OptionCalculator.h
 
 /home/patrick/ClionProjects/AutoHedge/TradingHandle.cpp
 cstring
@@ -137,8 +151,8 @@ MarketDataHandle.h
 /home/patrick/ClionProjects/AutoHedge/MarketDataHandle.h
 TradingHandle.h
 /home/patrick/ClionProjects/AutoHedge/TradingHandle.h
-DBDriver.h
-/home/patrick/ClionProjects/AutoHedge/DBDriver.h
+HedgeDriver.h
+/home/patrick/ClionProjects/AutoHedge/HedgeDriver.h
 
 /usr/local/include/boost/accumulators/accumulators.hpp
 boost/accumulators/framework/accumulator_set.hpp
