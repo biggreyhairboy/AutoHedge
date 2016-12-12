@@ -3,7 +3,7 @@ project(AutoHedge)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_VERBOSE_MAKEFILE ON)
-#SET(CMAKE_CXX_COMPILER "/usr/bin/clang++")
+
 SET(CMAKE_INCLUDE_PATH ${CMAKE_INCLUDE_PATH} "/usr/local/include/boost/")
 SET(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} "/usr/local/lib/")
 #下面这就话是有效的

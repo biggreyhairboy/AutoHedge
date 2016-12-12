@@ -17,7 +17,7 @@ class HedgeDriver {
 public:
     HedgeDriver(string maturity, Option::Type type, Real underlying, Real strike, Spread dividendYield,
                     Rate riskfreerate, Volatility vol);
-    void SetupYieldDividendVolcurve();
+    void SetupYieldDividendVolcurve(double underlyingprice);
     double GetOptionValue();
 private:
     // set up dates

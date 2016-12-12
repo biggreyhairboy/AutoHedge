@@ -10,7 +10,7 @@ HedgeDriver::HedgeDriver(string maturitydate, Option::Type optiontype, Real unde
 {
     // set up dates
     calendar = TARGET();
-    todaysDate = Date(2, December, 2016);
+    todaysDate = Date(10, December, 2016);
     settlementDate = Date(2, December, 2016);
     Settings::instance().evaluationDate() = todaysDate;
 
@@ -21,16 +21,16 @@ HedgeDriver::HedgeDriver(string maturitydate, Option::Type optiontype, Real unde
     dividendYield = dividend;
     riskFreeRate = riskfreerate;
     volatility = vol;
-    maturity = Date(15, December, 2016);
+    maturity = Date(15, March, 2017);
     dayCounter = Actual365Fixed();
     EE = boost::shared_ptr<Exercise>(new EuropeanExercise(maturity));
     Payoff = boost::shared_ptr<StrikedTypePayoff>(new PlainVanillaPayoff(Option::Type(type), strikeprice));
     europeanOption = new VanillaOption(Payoff, EE);
 }
-void HedgeDriver::SetupYieldDividendVolcurve()
+void HedgeDriver::SetupYieldDividendVolcurve(double underlyingprice)
 {
     Handle<Quote> underlyingH(
-            boost::shared_ptr<Quote>(new SimpleQuote(underlying)));
+            boost::shared_ptr<Quote>(new SimpleQuote(underlyingprice)));
     Handle<YieldTermStructure> flatTermStructure(
             boost::shared_ptr<YieldTermStructure>(
                     new FlatForward(settlementDate, riskFreeRate, dayCounter)));
@@ -46,12 +46,42 @@ void HedgeDriver::SetupYieldDividendVolcurve()
     boost::shared_ptr<BlackScholesMertonProcess> bsmProcess(
             new BlackScholesMertonProcess(underlyingH, flatDividendTS,
                                           flatTermStructure, flatVolTS));
+
     europeanOption->setPricingEngine(boost::shared_ptr<PricingEngine>(
             new AnalyticEuropeanEngine(bsmProcess)));
+//    //underlyingH.currentLink()
+//    underlying = 27000;
+//    Handle<Quote> anotherunderlyingH(boost::shared_ptr<Quote>(new SimpleQuote(underlying)));
+////    underlyingH = anotherunderlyingH;
+////    bsmProcess(
+////            new BlackScholesMertonProcess(underlyingH, flatDividendTS,
+////                                          flatTermStructure, flatVolTS));
+
+
 }
 
 double HedgeDriver::GetOptionValue() {
-    SetupYieldDividendVolcurve();
+    SetupYieldDividendVolcurve(underlying);
+    //europeanOption->
+    cout << europeanOption->NPV() << endl;
+    cout << europeanOption->delta() << endl;
+    cout << europeanOption->gamma() << endl;
+    cout << europeanOption->theta() << endl;
+    cout << europeanOption->vega() << endl;
+    cout << europeanOption->rho() << endl;
+
+    cout << "another process" << endl;
+    SetupYieldDividendVolcurve(27000);
+    //europeanOption->
+    cout << europeanOption->NPV() << endl;
+    cout << europeanOption->delta() << endl;
+    cout << europeanOption->gamma() << endl;
+    cout << europeanOption->theta() << endl;
+    cout << europeanOption->vega() << endl;
+    cout << europeanOption->rho() << endl;
+
+
+
     return europeanOption->NPV();
 }
 

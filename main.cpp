@@ -134,12 +134,12 @@ int main() {
 
     HedgeDriver hd(maturity, Option::Type(type), lastprice, strikeprice, dividend, riskfreerate, vol);
     cout <<"value of the option" << hd.GetOptionValue() << endl;
-//    BOOST_LOG_TRIVIAL(info)<<"quote thread started ...";
-//    //cout << "quote thread started .... " << endl;
-//    std::thread QuoteT(quoteThread, FRONT_ADDR_quote, brokerIDType, investorIDType, passwordType,
-//                       &dbDriver, ppIntrumentID,iInstrumentID);
-//    QuoteT.detach();
-//
+    BOOST_LOG_TRIVIAL(info)<<"quote thread started ...";
+    //cout << "quote thread started .... " << endl;
+    std::thread QuoteT(quoteThread, FRONT_ADDR_quote, brokerIDType, investorIDType, passwordType,
+                       &dbDriver, ppIntrumentID,iInstrumentID);
+    QuoteT.detach();
+
 //    BOOST_LOG_TRIVIAL(info)<<"trade thread started ...";
 //    std::thread TradingT(tradeThread, FRONT_ADDR_quote, brokerIDType, investorIDType, passwordType,
 //                       &dbDriver, tinstrumemt, price, quantity, direction);
